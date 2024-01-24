@@ -12,3 +12,5 @@ jobs:
         steps:
             - name: hello wolrd
               run: echo "hello world"
+            - name: getting current date
+              run: ls -l
