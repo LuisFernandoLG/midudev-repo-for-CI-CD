@@ -14,7 +14,10 @@ jobs:
             fetch-depth: 0
         - name: see directory
           run: ls -l
-
-        # - uses:actions/checkout@v4
-        #     with:
-        #         fetch-depth:0
+        - uses: actions/setup-node@v4
+          with:
+            node-version: '18'
+        - name: install dependencies
+          run: npm install
+        - name: Lint
+          run: npm run eslint
