@@ -13,4 +13,6 @@ jobs:
             - name: hello wolrd
               run: echo "hello world"
             - name: getting current date
+              run: date
+            - name: show directory
               run: ls -l
